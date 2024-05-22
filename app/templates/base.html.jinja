@@ -13,26 +13,29 @@
                 <ul>
                     <li>
                         <h5>
-                            <a href="">Ekstrakcja opinii</a>
+                            <a href="{{url_for('extract')}}">Ekstrakcja opinii</a>
                         </h5>
                     </li>
                     <li>
                         <h5>
-                            <a href="">Lista produktów</a>
+                            <a href="{{url_for('products')}}">Lista produktów</a>
                         </h5>
                     </li>
                     <li>
                         <h5>
-                            <a href="">Strona główna</a>
+                            <a href="{{url_for('index')}}">Strona główna</a>
                         </h5>
                     </li>
                     <li>
                         <h5>
-                            <a href="">O autorze</a>
+                            <a href="{{url_for('about')}}">O autorze</a>
                         </h5>
                     </li>
                 </ul>
             </div>
+            {%block content%}
+                <p>Strona główna (przekierowano automatycznie)</p>
+            {%endblock content%}
             <div class="features">
                 <h6>Aplikacja jest web scraperem do serwisu Ceneo.pl. Można wykorzystać ją do ekstrakcji produktów i opinii na ich temat z serwisu.</h6>
                 <h6>Aplikacja działa na zasadzie...</h6>
