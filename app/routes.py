@@ -34,7 +34,7 @@ def extract():
             page = BeautifulSoup(response.text, 'html.parser')
             opinions_count = page.select_one("a.product-review__link > span")
             all_opinions = []
-            for opinion in opinions:
+            for opinion in all_opinions:
                 single_opinion = {
                     key: utils.get_data(opinion, *value)
                         for key, value in utils.selectors.items()
